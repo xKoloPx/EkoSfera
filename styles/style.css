@@ -1,0 +1,489 @@
+body, html { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.content {
+  width: 100%-100px;
+  height: auto;
+  margin-left: 100px;
+}
+/* MENU */
+.logo {
+  height: 130px;
+  width: 130px;
+  margin: 10px 10px;
+  cursor: pointer;
+  float: left;
+}
+.menu-title {
+  font-family: 'Rubik Puddles', cursive;
+  font-size: 50px;
+  color: green;
+  padding: 40px;
+  cursor: default;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: -400px;
+  width: 500px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 2;
+  }
+.menu-toggle {
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  float: right;
+  }
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px 10px;
+  }
+.menu-items li {
+  margin-bottom: 10px;
+  }
+.menu-items a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 36px;
+  width: 350px;
+  padding: 5px;
+  transition: 0.5s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+.menu-items a:hover {
+  background-color: #555;
+  margin-left: 20px;
+  border-left: 5px solid green;
+  }
+.menu-items img{
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-50%);
+}
+.menu.open {
+  left: 0;
+}
+#title {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+.title {
+  width: 100%;
+  height: 300px;
+  background-color: #072c3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10%;
+}
+.title h1{
+  font-family: 'Rubik Puddles', cursive;
+  font-size: 120px;
+  color: green;
+  font-weight: normal;
+  cursor: default;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  float: left;
+}
+.title-logo {
+  width: 200px;
+  height: 200px;
+}
+.title-line {
+  width: 3px;
+  height: 240px;
+  background-color: green;
+  margin-right: 15px;
+}
+.start-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.start-button:hover {
+  background-color: darkgreen;
+}
+#steps {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10%;
+}
+#steps img {
+  height: 150px;
+  width: 150px;
+}
+.steps-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration-color: #7692FF;
+}
+.step {
+  width: 500px;
+  height: 300px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-underline {
+  height: 2px;
+  width: 80%;
+  background-color: green;
+}
+.step h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  color: green;
+}
+#lesson {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.lesson-title {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100px;
+  background-color: #072c3f;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  z-index: 1;
+}
+.video-title {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: green;
+  font-size: 24px;
+}
+.lesson-nav {
+  margin-right: 50px;
+  cursor: pointer;
+}
+.rotated {
+  transform: rotate(180deg);
+}
+.lesson-nav:hover {
+  scale: 0.9;
+}
+.lesson-video {
+  width: 90%;
+  height: 0px;
+  position: relative;
+  top: -200px;
+  z-index: 0;
+  display: none;
+}
+.lesson-video-hidden {
+  background-color: #072c3f;
+  display: block;
+  top: 0;
+  height: 700px;
+}
+.video-button{
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+}
+.video-button:hover {
+  background-color: darkgreen;
+}
+.video-button:active {
+  background-color: gainsboro;
+}
+.table {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.table tr{
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.table th{
+  color: green;
+}
+.table a{
+  text-decoration: none;
+  color: black;
+}
+.table a:hover {
+  font-weight: bold;
+}
+.quiz-enter {
+  width: 40%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-enter img {
+  width: 150px;
+  height: 150px;
+}
+.quiz-note {
+  color: green;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.curiosity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 500px;
+}
+.curiosity img {
+  margin-right: 20px;
+  height: 240px;
+  width: 240px;
+}
+.curiosity-text{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  width: 50%;
+  color: green;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+  display: flex;
+}
+.footer-left{
+  width: 70%;
+  height: 100px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 100px;
+}
+.footer-left h3{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.footer-right {
+  width: 10%;
+  height: 100px;
+  background-color: #333;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-right img {
+  margin-top: 10px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footer-right img:hover {
+  margin-top: -10px;
+}
+/*
+===========================
+CSS for QUIZ
+===========================
+*/
+.left-content {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  position: fixed;
+}
+.left-content img {
+  width: 80px;
+  height: 80px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.left-content img:hover {
+  margin-right: 15px;
+}
+.quiz {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.question h2 {
+  font-size: 36px;
+  text-decoration: underline;
+  text-decoration-color: #7692FF;
+}
+.options {
+  margin-bottom: 20px;
+}
+.option {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 5px;
+  border: 2px solid #072c3f;
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+.option:hover {
+  border: 4px solid #072c3f;
+  background-color: azure;
+}
+.option p {
+  margin-left: 20px;
+  font-size: 24px;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 40px; 
+  height: 40px; 
+  border: 2px solid #072c3f;
+  transition: 0.5s;
+  cursor: pointer;
+}
+input[type="radio"]:checked {
+  background-color: #7692FF;
+}
+.input-line {
+  width: 3px;
+  height: 100%;
+  background-color: #072c3f;
+}
+#check {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+#check:hover {
+  background-color: darkgreen;
+}
+#result {
+  width: 500px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#072c3f;
+  color: white;
+  font-size: 24px;
+  z-index: 1000;
+  display: none;
+  border-radius: 50px;;
+}
+#result h1 {
+  font-family: 'Rubik Puddles', cursive;
+  font-size: 50px;
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-underline-offset: 5px;
+}
+#result h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  margin-left: 15px;
+}
+.form {
+  margin-top: 40px;
+  display: none;
+}
+.form input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  display: none;
+}

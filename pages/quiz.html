@@ -1,0 +1,161 @@
+<div class="left-content">
+    <img src="icons/arrow-down.png" onclick="backToMain()"/>
+</div>
+<div class="content">
+    <div class="title" style="border-top-left-radius: 0; border-top-right-radius: 0;">
+        <img class="title-logo" src="img/logo.png" alt="logo"/>
+        <div class="title-line"></div>
+        <h1>EkoSfera</h1>
+    </div>
+    <div class="quiz">
+        <!--Pytanie #1-->
+        <div class="question">
+            <h2>1. Pytanie nr.1?</h2>
+        </div>
+        <div class="options">
+            <div class="option" onclick="inputToggle(0)">
+                <input type="radio" name="q1" value="a">
+                <div class="input-line"></div>
+                <p>a) Odp 1</p>
+            </div>
+            <div class="option" onclick="inputToggle(1)">
+                <input type="radio" name="q1" value="b">
+                <div class="input-line"></div>
+                <p>b) Odp 2</p>
+            </div>
+            <div class="option" onclick="inputToggle(2)">
+                <input type="radio" name="q1" value="c">
+                <div class="input-line"></div>
+                <p>c) Odp 3</p>
+            </div>
+            <div class="option" onclick="inputToggle(3)">
+                <input type="radio" name="q1" value="d">
+                <div class="input-line"></div>
+                <p>d) Odp 4</p>
+            </div>
+        </div>
+        <!--Pytanie #2-->
+        <div class="question">
+            <h2>1. Pytanie nr.1?</h2>
+        </div>
+        <div class="options">
+            <div class="option" onclick="inputToggle(4)">
+                <input type="radio" name="q2" value="a">
+                <div class="input-line"></div>
+                <p>a) Odp 1</p>
+            </div>
+            <div class="option" onclick="inputToggle(5)">
+                <input type="radio" name="q2" value="b">
+                <div class="input-line"></div>
+                <p>b) Odp 2</p>
+            </div>
+            <div class="option" onclick="inputToggle(6)">
+                <input type="radio" name="q2" value="c">
+                <div class="input-line"></div>
+                <p>c) Odp 3</p>
+            </div>
+            <div class="option" onclick="inputToggle(7)">
+                <input type="radio" name="q2" value="d">
+                <div class="input-line"></div>
+                <p>d) Odp 4</p>
+            </div>
+        </div>
+        <!--Pytanie #3-->
+        <div class="question">
+            <h2>1. Pytanie nr.1?</h2>
+        </div>
+        <div class="options">
+            <div class="option" onclick="inputToggle(8)">
+                <input type="radio" name="q3" value="a">
+                <div class="input-line"></div>
+                <p>a) Odp 1</p>
+            </div>
+            <div class="option" onclick="inputToggle(9)">
+                <input type="radio" name="q3" value="b">
+                <div class="input-line"></div>
+                <p>b) Odp 2</p>
+            </div>
+            <div class="option" onclick="inputToggle(10)">
+                <input type="radio" name="q3" value="c">
+                <div class="input-line"></div>
+                <p>c) Odp 3</p>
+            </div>
+            <div class="option" onclick="inputToggle(11)">
+                <input type="radio" name="q3" value="d">
+                <div class="input-line"></div>
+                <p>d) Odp 4</p>
+            </div>
+        </div>
+        <!--Pytanie #4-->
+        <div class="question">
+            <h2>1. Pytanie nr.1?</h2>
+        </div>
+        <div class="options">
+            <div class="option" onclick="inputToggle(12)">
+                <input type="radio" name="q4" value="a">
+                <div class="input-line"></div>
+                <p>a) Odp 1</p>
+            </div>
+            <div class="option" onclick="inputToggle(13)">
+                <input type="radio" name="q4" value="b">
+                <div class="input-line"></div>
+                <p>b) Odp 2</p>
+            </div>
+            <div class="option" onclick="inputToggle(14)">
+                <input type="radio" name="q4" value="c">
+                <div class="input-line"></div>
+                <p>c) Odp 3</p>
+            </div>
+            <div class="option" onclick="inputToggle(15)">
+                <input type="radio" name="q4" value="d">
+                <div class="input-line"></div>
+                <p>d) Odp 4</p>
+            </div>
+        </div>
+        <!--Pytanie #5-->
+        <div class="question">
+            <h2>1. Pytanie nr.1?</h2>
+        </div>
+        <div class="options">
+            <div class="option" onclick="inputToggle(16)">
+                <input type="radio" name="q5" value="a">
+                <div class="input-line"></div>
+                <p>a) Odp 1</p>
+            </div>
+            <div class="option" onclick="inputToggle(17)">
+                <input type="radio" name="q5" value="b">
+                <div class="input-line"></div>
+                <p>b) Odp 2</p>
+            </div>
+            <div class="option" onclick="inputToggle(18)">
+                <input type="radio" name="q5" value="c">
+                <div class="input-line"></div>
+                <p>c) Odp 3</p>
+            </div>
+            <div class="option" onclick="inputToggle(19)">
+                <input type="radio" name="q5" value="d">
+                <div class="input-line"></div>
+                <p>d) Odp 4</p>
+            </div>
+        </div>
+        <button id="check" onclick="checkAnswers()">Sprawdź</button>
+        <div id="result">
+            <h1>EkoSfera</h1>
+            <h3>Rezultaty: </h3>
+            <h3 class="result-single">1</h3>
+            <h3 class="result-single">2</h3>
+            <h3 class="result-single">3</h3>
+            <h3 class="result-single">4</h3>
+            <h3 class="result-single">5</h3>
+            <h3 id="score"></h3>
+            <h3 class="result-info"></h3>
+            <form method="post" action="pages/sendMail.php" class="form">
+                <input type="text" name="imie" placeholder="Imię" required><br/>
+                <input type="text" name="nazwisko" placeholder="Nazwisko" required><br/>
+                <input type="text" name="email" placeholder="E-mail" required><br/>
+                <button type="submit" name="submit">Otrzymaj certyfikat</button>
+            </form>
+        </div>
+        <div id="overlay" onclick="hideOverlay()"></div>
+    </div>
+</div>
